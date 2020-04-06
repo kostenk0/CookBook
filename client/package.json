@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.4.1",
+    "concurrently": "^5.1.0",
     "cors": "^2.8.5",
     "esm": "^3.2.25",
     "express": "^4.17.1",
@@ -17,9 +18,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "server": "node -r esm server.js",
+    "client": "npm start",
+    "all": "concurrently \"npm run server\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": "react-app"

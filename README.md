@@ -1,3 +1,3 @@
 cd client
-<br/>>
+<br/>
 npm run all
